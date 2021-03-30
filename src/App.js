@@ -1,5 +1,8 @@
 import React from 'react';
 import Hello from './Hello';
+import Wrapper from './Wrapper';
+import Counter from './Counter';
+
 import './App.css';
 
 
@@ -12,11 +15,14 @@ function App() {
     padding : '1rem'
   }
   return (
-    <div>
+    <Wrapper>
         <Hello/>
         <div style={style}>{name}</div>
         <div className="gray-box"></div>
-    </div>
+        <Hello name = "react" color="red" />
+        <Hello color="pink" isSpecial/>
+        <Counter />
+    </Wrapper>
   );
 }
 
