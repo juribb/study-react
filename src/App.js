@@ -2,11 +2,15 @@ import React from 'react';
 import Hello from './Hello';
 import Wrapper from './Wrapper';
 import Counter from './Counter';
+import InputSample from './InputSample';
+import InputSample2 from './InputSample2';
 
 import './App.css';
+import UserList from './UserList';
 
 
 function App() {
+
   const name = "react";
   const style = {
     backgroundColor : 'black',
@@ -22,6 +26,9 @@ function App() {
         <Hello name = "react" color="red" />
         <Hello color="pink" isSpecial/>
         <Counter />
+        <InputSample/>
+        <InputSample2/>
+        <UserList/>
     </Wrapper>
   );
 }
